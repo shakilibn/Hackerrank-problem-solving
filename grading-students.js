@@ -2,19 +2,19 @@ const marks = [73, 67, 40, 33];
 
 function gradingStudentsByUsingMap(marks) {
     const NewGrades = []
-    marks.map(item => {
+    marks = marks.map(item => {
         if(item >= 38){
             const diff = 5 - (item%5)
             if(diff < 3){
-                NewGrades.push(item + diff);
+                return (item + diff);
             } else {
-                NewGrades.push(item);
+                return (item);
             }
         } else {
-            NewGrades.push(item);
+            return (item);
         }
     })
-    return NewGrades;
+    return marks;
 }
 
 function gradingStudents(marks) {
@@ -30,4 +30,4 @@ function gradingStudents(marks) {
     console.log(marks);
 }
 
-gradingStudents(marks);
+console.log(gradingStudentsByUsingMap(marks));
