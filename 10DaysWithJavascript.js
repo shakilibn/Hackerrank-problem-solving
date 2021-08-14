@@ -63,14 +63,33 @@
 
 //day 4
 
-function Rectangle(a, b) {
-  const length = a;
-  const width = b;
-  const perimeter = 2 * (a + b);
-  const area = a * b;
+// function Rectangle(a, b) {
+//   const length = a;
+//   const width = b;
+//   const perimeter = 2 * (a + b);
+//   const area = a * b;
 
-  const obj = { length, width, perimeter, area };
-  return obj;
+//   const obj = { length, width, perimeter, area };
+//   return obj;
+// }
+
+// console.log(Rectangle(4, 5));
+
+function getCount(objects) {
+  let count = 0;
+  objects.forEach((element) => {
+    if (element.x === element.y) {
+      count++;
+    }
+  });
+  return count;
 }
 
-console.log(Rectangle(4, 5));
+const o = [
+  { x: 1, y: 1 },
+  { x: 2, y: 3 },
+  { x: 3, y: 3 },
+  { x: 3, y: 4 },
+];
+
+console.log(getCount(o));
