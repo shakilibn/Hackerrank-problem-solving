@@ -60,3 +60,17 @@
 // }
 
 // console.log(isPositive(0));
+
+//day 4
+
+function Rectangle(a, b) {
+  const length = a;
+  const width = b;
+  const perimeter = 2 * (a + b);
+  const area = a * b;
+
+  const obj = { length, width, perimeter, area };
+  return obj;
+}
+
+console.log(Rectangle(4, 5));
