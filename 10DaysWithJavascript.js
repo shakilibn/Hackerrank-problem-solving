@@ -27,25 +27,36 @@
 //         let isExist = newArray.indexOf(element);
 //         if (isExist == -1){
 //             newArray.push(element)
-//         }      
+//         }
 //     }
 //     return (newArray[newArray.length - 2]);
 // }
 
 // getSecondLargest(nums);
 
+// const s = Number(1234);
+// function reverseString(s) {
+//     try {
+//         const newS = s.split('');
+//         const reverseS = newS.reverse();
+//         const joinS = reverseS.join('');
+//         console.log(joinS);
+//     } catch (e) {
+//         console.log(e.message);
+//         console.log(s);
+//     }
+// }
 
-const s = Number(1234);
-function reverseString(s) {
-    try {
-        const newS = s.split('');
-        const reverseS = newS.reverse();
-        const joinS = reverseS.join('');
-        console.log(joinS);
-    } catch (e) {
-        console.log(e.message);
-        console.log(s);
-    }
-}
+// reverseString(s);
 
-reverseString(s);
+// function isPositive(a) {
+//   if (a === 0) {
+//     throw new Error("Zero Error");
+//   }
+//   if (a < 0) {
+//     throw new Error("Negative Error");
+//   }
+//   return "YES";
+// }
+
+// console.log(isPositive(0));
