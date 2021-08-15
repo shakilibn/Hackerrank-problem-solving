@@ -75,21 +75,55 @@
 
 // console.log(Rectangle(4, 5));
 
-function getCount(objects) {
-  let count = 0;
-  objects.forEach((element) => {
-    if (element.x === element.y) {
-      count++;
-    }
-  });
-  return count;
+// function getCount(objects) {
+//   let count = 0;
+//   objects.forEach((element) => {
+//     if (element.x === element.y) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+// const o = [
+//   { x: 1, y: 1 },
+//   { x: 2, y: 3 },
+//   { x: 3, y: 3 },
+//   { x: 3, y: 4 },
+// ];
+
+// console.log(getCount(o));
+
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   speak() {
+//     console.log(this.name, "speak");
+//   }
+// }
+// class Dog extends Animal {
+//   speak() {
+//     console.log(this.name, "barks");
+//   }
+// }
+// let spot = new Dog("spot");
+// spot.speak();
+// let Spot = new Animal("spot");
+// Spot.speak();
+
+class Polygon {
+  constructor(a) {
+    this.a = a;
+  }
+  perimeter() {
+    let pm = 0;
+    this.a.forEach((element) => {
+      pm += element;
+    });
+    return pm;
+  }
 }
 
-const o = [
-  { x: 1, y: 1 },
-  { x: 2, y: 3 },
-  { x: 3, y: 3 },
-  { x: 3, y: 4 },
-];
-
-console.log(getCount(o));
+let triangle = new Polygon([3, 4, 5]);
+console.log(triangle.perimeter());
