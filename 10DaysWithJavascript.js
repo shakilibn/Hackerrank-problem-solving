@@ -142,3 +142,28 @@
 //   });
 //   return array;
 // }
+
+// function modifyArray(nums) {
+//   const newNums = nums.map((item) => {
+//     if (item % 2 === 0) {
+//       return item * 2;
+//     } else {
+//       return item * 3;
+//     }
+//   });
+//   return newNums;
+// }
+// const arr = [1, 2, 3, 4, 5];
+// console.log(modifyArray(arr));
+
+Rectangle.prototype.area = function () {
+  return this.w * this.h;
+};
+
+class Square extends Rectangle {
+  constructor(s) {
+    super();
+    this.h = s;
+    this.w = s;
+  }
+}
