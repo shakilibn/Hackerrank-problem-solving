@@ -156,14 +156,51 @@
 // const arr = [1, 2, 3, 4, 5];
 // console.log(modifyArray(arr));
 
-Rectangle.prototype.area = function () {
-  return this.w * this.h;
-};
+// Rectangle.prototype.area = function () {
+//   return this.w * this.h;
+// };
 
-class Square extends Rectangle {
-  constructor(s) {
-    super();
-    this.h = s;
-    this.w = s;
-  }
+// class Square extends Rectangle {
+//   constructor(s) {
+//     super();
+//     this.h = s;
+//     this.w = s;
+//   }
+// }
+
+// function maxLessThanK(n, k) {
+//   let max = 0;
+//   let current = -1;
+//   for (let i = 1; i < k; i++) {
+//     for (let j = i + 1; j <= n; j++) {
+//       current = i & j;
+//       if (current < k && current > max) {
+//         max = current;
+//       }
+//     }
+//   }
+//   return max;
+// }
+
+// console.log(maxLessThanK(5, 2));
+
+function getDayNames(dateString) {
+  let dayName;
+
+  const dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const date = new Date(dateString);
+
+  dayName = dayNames[date.getDay()];
+
+  return dayName;
 }
+
+console.log(getDayNames("10 / 11 / 2009"));
